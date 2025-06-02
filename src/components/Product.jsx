@@ -5,6 +5,7 @@ import axios from "axios";
 export default function Product() {
   const { user } = useContext(AppContext);
   const [products, setProducts] = useState([]);
+  
   const fetchProducts = async () => {
     const res = await axios.get("http://localhost:8080/products");
     setProducts(res.data);
