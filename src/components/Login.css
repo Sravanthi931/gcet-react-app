@@ -49,3 +49,32 @@
   color: crimson;
   font-weight: bold;
 }
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:not(.create-account-btn) {
+  background-color: #4CAF50;
+}
+
+.login-container button:not(.create-account-btn):hover {
+  background-color: #388e3c;
+}
+
+.create-account-btn {
+  background-color: orange;
+}
+
+.create-account-btn:hover {
+  background-color: darkorange;
+}
+
